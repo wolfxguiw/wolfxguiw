@@ -1,0 +1,65 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#070B10"/>
+      <stop offset="0.55" stop-color="#0B1119"/>
+      <stop offset="1" stop-color="#07131A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="120" y1="0" x2="1030" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#39FF14"/>
+      <stop offset="0.5" stop-color="#00E5FF"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#8B949E" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="360" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="24" fill="url(#grid)"/>
+  <rect x="1" y="1" width="1198" height="358" rx="23" stroke="url(#accent)" stroke-opacity="0.28" stroke-width="2"/>
+
+  <g opacity="0.9">
+    <circle cx="74" cy="54" r="6" fill="#FF5F56"/>
+    <circle cx="96" cy="54" r="6" fill="#FFBD2E"/>
+    <circle cx="118" cy="54" r="6" fill="#27C93F"/>
+    <text x="150" y="60" fill="#6E7681" font-size="16" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">profile://wolfxguiw</text>
+  </g>
+
+  <text x="78" y="128" fill="#39FF14" font-size="19" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">&gt; whoami</text>
+  <text x="78" y="191" fill="#F0F6FC" font-size="46" font-weight="700" font-family="Inter, Segoe UI, Arial, sans-serif">Guilherme Sampaio</text>
+  <text x="80" y="231" fill="#8B949E" font-size="22" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">Data Engineering  •  ETL  •  Automation</text>
+  <rect x="79" y="260" width="470" height="2" rx="1" fill="url(#accent)" opacity="0.8"/>
+  <text x="80" y="300" fill="#C9D1D9" font-size="17" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">turning messy inputs into traceable pipelines_</text>
+
+  <g transform="translate(730 78)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M44 45H150M176 45H284M310 45H394" stroke="#30363D" stroke-width="3"/>
+    <path d="M44 122H150M176 122H284M310 122H394" stroke="#30363D" stroke-width="3"/>
+    <path d="M163 58V109M297 58V109" stroke="#30363D" stroke-width="3"/>
+    <path d="M44 199H150M176 199H284M310 199H394" stroke="#30363D" stroke-width="3"/>
+
+    <circle cx="30" cy="45" r="14" fill="#071B10" stroke="#39FF14" stroke-width="3" filter="url(#glow)"/>
+    <circle cx="163" cy="45" r="14" fill="#061820" stroke="#00E5FF" stroke-width="3"/>
+    <circle cx="297" cy="45" r="14" fill="#0E0A1B" stroke="#7C3AED" stroke-width="3"/>
+    <circle cx="408" cy="45" r="14" fill="#071B10" stroke="#39FF14" stroke-width="3"/>
+
+    <circle cx="30" cy="122" r="14" fill="#061820" stroke="#00E5FF" stroke-width="3"/>
+    <circle cx="163" cy="122" r="14" fill="#071B10" stroke="#39FF14" stroke-width="3"/>
+    <circle cx="297" cy="122" r="14" fill="#061820" stroke="#00E5FF" stroke-width="3"/>
+    <circle cx="408" cy="122" r="14" fill="#0E0A1B" stroke="#7C3AED" stroke-width="3"/>
+
+    <circle cx="30" cy="199" r="14" fill="#0E0A1B" stroke="#7C3AED" stroke-width="3"/>
+    <circle cx="163" cy="199" r="14" fill="#061820" stroke="#00E5FF" stroke-width="3"/>
+    <circle cx="297" cy="199" r="14" fill="#071B10" stroke="#39FF14" stroke-width="3"/>
+    <circle cx="408" cy="199" r="14" fill="#061820" stroke="#00E5FF" stroke-width="3"/>
+
+    <text x="0" y="244" fill="#6E7681" font-size="14" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">INGEST  →  TRANSFORM  →  VALIDATE  →  EXPORT</text>
+  </g>
+</svg>
